@@ -1,7 +1,6 @@
   <!DOCTYPE html>
   <html>
-    <head>
-     
+    <head>         
     <title>
         Careers Website
       </title>
@@ -32,11 +31,16 @@
       <h2 class="text-center mt-2 mb-4">
         <center>
         Open Positions 
-          </center>
+         </center>
       </h2>
-      <p class="bodytext">
-        TODO: SHOW JOBS HERE
-      </p>
+      
+       
+        <div> 
+        {% for job in jobs %}
+        {%include 'jobitem.html'%}
+            {% endfor %}
+        </div>
+      
         <div class="text-center" >
      <button type="button" class="btn btn-primary btn-lg">Contact us 
      </button>
